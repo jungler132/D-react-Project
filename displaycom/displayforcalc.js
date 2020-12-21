@@ -50,7 +50,7 @@ export default class DisplayForCalc extends React.Component{
     }
     calculatedResult= () => {
         this.isDotPressed = false
-        if(this.answerResult == "Infinity"){
+        if(this.answerResult == "Infinity" || this.answerResult == "-Infinity"){
             this.setState({result : "ERROR DIVIDE BY 0"})
         }
         else if(this.state.result == ""){
